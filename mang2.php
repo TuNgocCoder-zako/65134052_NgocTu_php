@@ -90,10 +90,6 @@ if (isset($_POST['submit'])) {
             font-size: 14px;
             font-weight: 500;
         }
-        .note {
-            color: #cc0000;
-            font-size: 13px;
-        }
         .error-msg {
             color: #cc0000;
             font-size: 13px;
@@ -132,7 +128,7 @@ if (isset($_POST['submit'])) {
         </tr>
         <tr>
             <td colspan="2" style="text-align: center; padding-top: 4px; padding-bottom: 12px;">
-                <span class="note">(*) Các số được nhập cách nhau bằng dấu ","</span>
+                <span>(*) Các số được nhập cách nhau bằng dấu ","</span>
                 <?php if ($thongBao != ""): ?>
                     <div class="error-msg"><?php echo htmlspecialchars($thongBao); ?></div>
                 <?php endif; ?>
