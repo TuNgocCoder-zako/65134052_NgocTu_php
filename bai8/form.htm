@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        fieldset {
+            width: 480px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            border: 1px solid #999999;
+        }
+        legend {
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 5px 6px;
+            vertical-align: top;
+        }
+        .lbl {
+            font-weight: bold;
+            width: 90px;
+        }
+        input[type="text"], select, textarea {
+            border: 1px solid #7f9db9;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 3px 5px;
+        }
+        select {
+            width: 120px;
+            padding: 2px;
+        }
+        textarea {
+            width: 320px;
+            height: 80px;
+            padding: 4px;
+        }
+        .btn-group {
+            padding-top: 10px;
+        }
+        .btn-group input {
+            padding: 3px 12px;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<form action="config.php" method="post">
+    <fieldset>
+        <legend>Enter Your Information</legend>
+        <table>
+            <tr>
+                <td class="lbl">Fullname</td>
+                <td><input type="text" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td class="lbl">Address</td>
+                <td><input type="text" name="address" required></td>
+            </tr>
+            <tr>
+                <td class="lbl">Phone</td>
+                <td><input type="text" name="phone" required></td>
+            </tr>
+            <tr>
+                <td class="lbl">Gender</td>
+                <td>
+                    <label><input type="radio" name="gender" value="Nam" checked> Nam</label>
+                    <label><input type="radio" name="gender" value="Nữ"> Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="lbl">Country</td>
+                <td>
+                    <select name="country">
+                        <option value="Việt Nam" selected>Việt Nam</option>
+                        <option value="Mỹ">Mỹ</option>
+                        <option value="Anh">Anh</option>
+                        <option value="Pháp">Pháp</option>
+                        <option value="Nhật Bản">Nhật Bản</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="lbl">Study</td>
+                <td>
+                    <label><input type="checkbox" name="study[]" value="PHP & MySQL"> PHP &amp; MySQL</label>
+                    <label><input type="checkbox" name="study[]" value="ASP.NET"> ASP.NET</label>
+                    <label><input type="checkbox" name="study[]" value="CCNA"> CCNA</label>
+                    <label><input type="checkbox" name="study[]" value="Security+"> Security+</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="lbl">Note</td>
+                <td>
+                    <textarea name="note" rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="btn-group">
+                    <input type="submit" name="submit" value="Gửi">
+                    <input type="reset" name="reset" value="Hủy">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+</body>
+</html>
