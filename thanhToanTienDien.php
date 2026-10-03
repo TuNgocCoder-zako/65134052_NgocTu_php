@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
         <tr>
             <td>Chỉ số cũ:</td>
             <td>
-                <input type="number" name="chiSoCu" class="input-text" required
+                <input type="text" name="chiSoCu" class="input-text" required
                        value="<?php echo htmlspecialchars($chiSoCu); ?>">
                 <span class="unit">(Kw)</span>
             </td>
@@ -93,7 +93,7 @@ if (isset($_POST['submit'])) {
         <tr>
             <td>Chỉ số mới:</td>
             <td>
-                <input type="number" name="chiSoMoi" class="input-text" required
+                <input type="text" name="chiSoMoi" class="input-text" required
                        value="<?php echo htmlspecialchars($chiSoMoi); ?>">
                 <span class="unit">(Kw)</span>
             </td>
@@ -101,7 +101,7 @@ if (isset($_POST['submit'])) {
         <tr>
             <td>Đơn giá:</td>
             <td>
-                <input type="number" name="donGia" class="input-text" required
+                <input type="text" name="donGia" class="input-text" required
                        value="<?php echo htmlspecialchars($DonGia); ?>">
                 <span class="unit">(VNĐ)</span>
             </td>

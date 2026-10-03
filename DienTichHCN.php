@@ -71,21 +71,21 @@
         <table class="form-table">
             <tr class="form-header">
                 <td colspan="2">
-                    <h2>Dien tich hinh chu nhat</h2>
+                    <h2>Diện Tích Hình Chữ Nhật</h2>
                 </td>
             </tr>
             <tr>
-                <td>Length:</td>
+                <td>Chiều dài:</td>
                 <td>
-                    <input type="number" name="length" required
+                    <input type="text" name="length" required
                     value="<?php if(isset($_POST['length'])) echo $_POST['length']; ?>"
                     >
                 </td>
             </tr>
             <tr>
-                <td>Width:</td>
+                <td>Chiều rộng:</td>
                 <td>
-                    <input type="number" name="width" required 
+                    <input type="text" name="width" required 
                     value="<?php if(isset($_POST['width'])) echo $_POST['width']; ?>"
                 >
                 </td>

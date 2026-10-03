@@ -71,35 +71,35 @@
         <table class="form-table">
             <tr class="form-header">
                 <td colspan="2">
-                    <h2>Dien tich hinh tron</h2>
+                    <h2>Diện Tích và Chu Vi Hình Tròn</h2>
                 </td>
             </tr>
             <tr>
-                <td>Radius:</td>
+                <td>Bán Kính:</td>
                 <td>
-                    <input type="number" name="length" required
+                    <input type="text" name="length" required
                     value="<?php if(isset($_POST['length'])) echo $_POST['length']; ?>"
                     >
                     </td>
                 </tr>
                 <tr>
-                    <td>Chu vi:</td>
+                    <td>Diện Tích:</td>
                     <td>
                         <input type="text" name="dien_tich" class="input-result" readonly 
-                    value="<?php echo htmlspecialchars($chuvi); ?>">
+                    value="<?php echo htmlspecialchars($dien_tich); ?>"
                 >
                 </td>
             </tr>
             <tr>
-                <td>Diện tích:</td>
+                <td>Chu Vi:</td>
                 <td>
-                    <input type="text" name="dien_tich" class="input-result" readonly 
-                           value="<?php echo htmlspecialchars($dien_tich); ?>">
+                    <input type="text" name="chuvi" class="input-result" readonly 
+                           value="<?php echo htmlspecialchars($chuvi); ?>">
                 </td>
             </tr>
             <tr>
                 <td colspan="2" style="text-align: center;">
-                    <input type="submit" name="submit" value="Tinh" class="btn-submit">
+                    <input type="submit" name="submit" value="Tính" class="btn-submit">
                 </td>
             </tr>
         </table>

@@ -101,7 +101,8 @@ if (isset($_POST['submit'])) {
         <tr>
             <td>Điểm chuẩn:</td>
             <td>
-                <input type="text" name="diemChuan" class="input-text" required
+                <input type="text" name="diemChuan" class="input-text" readonly 
+                    style="color: red;"
                        value="<?php echo htmlspecialchars($diemChuan); ?>">
             </td>
         </tr>
